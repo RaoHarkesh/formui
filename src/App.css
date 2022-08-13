@@ -1,3 +1,6 @@
+
+
+
 *{
   box-sizing: border-box;
 }
@@ -14,6 +17,9 @@
   
 }
 
+select{
+  color: grey;
+}
 /* .header button{
   height: 80%;
   font-size: 15px;
@@ -22,13 +28,23 @@
 } */
 .inside.insidebutton{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 80%;
   
-  
-  cursor: pointer;
-
 }
+
+.inside.insidebutton button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 0.1px solid lightgrey;
+}
+.inside.insidebutton button:hover{
+   background-color: lightgrey;
+}
+
+
 .header span{
   font-weight: bolder;
 }
@@ -101,9 +117,9 @@
 }
 
 .inside{
-  width: 30rem;
+  width: 50rem;
   height: 100%;
-   
+   /* background-color: aquamarine; */
    
 }
 .inside.insidename{
@@ -118,6 +134,53 @@
   height: 100%;
   width: 100%;
   outline: none;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+}
+.gender-nationality{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  min-height: 25px;
+}
+
+.inside.insidegender{
+  display: flex;
+  justify-content: space-between;
+}
+.gender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  min-height: 25px;
+}
+.nationality{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  min-height: 25px;
+}
+#gender{
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  outline-color: lightblue;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+}
+
+#nationality{
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  outline-color: lightblue;
   border: 1px solid #D9D9D9;
   border-radius: 4px;
 }
@@ -384,7 +447,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  border: 1px dotted #D9D9D9;
+  border:  dotted 2px #D9D9D9;
   border-radius: 4px;
   display: flex;
   justify-content: space-evenly;
