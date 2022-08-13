@@ -5,8 +5,11 @@ const Candidate =()=>{
     return(
         <>
              <div className="header">
+          <div className="inside insidebutton">
           <button onClick={()=>setEdit(false)}>Create user</button>
           <button onClick={()=>setEdit(true)}>Edit user</button>
+          </div>
+          
     </div>
     <div className="create">
         <div className="inside insidecreate">
@@ -56,9 +59,9 @@ const Candidate =()=>{
                         <option value="aus">AUS</option>
                         <option value="can">CAN</option>
                     </select>
-                    <input type="tel" value="+91" maxlength="13"
-                      id="phone"/>
-                    
+                    {/* <input type="tel" value="+91" maxlength="13"
+                      id="phone"/> */}
+                    <input type="tel" name="phone"  id="phone"  placeholder="PHONE" maxLength={10}/>
                     
                 </div>
             </div>
